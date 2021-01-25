@@ -1,4 +1,4 @@
-![CI](https://github.com/statropy/msp430F55xx_usb_uart_bridge/workflows/CI/badge.svg)
+![CI](https://github.com/jadonk/msp430F55xx_usb_uart_bridge/workflows/CI/badge.svg)
 
 # msp430F55xx_usb_uart_bridge
 Bridge between UART and USB CDC serial port for MSP430F55xx
@@ -7,9 +7,18 @@ Bridge between UART and USB CDC serial port for MSP430F55xx
 
 Install [python-msp430-tools](https://github.com/statropy/ti_msp430_python_tools) to load program using BSL.
 
-Place board into BSL mode before programming.
+### BSL Mode
 
-### MSP430F5503 target using UART1
+Place board into BSL mode before programming
+
+* Unplug board from external power and USB
+* Hold down BSL button
+* Plug in USB cable connected to host computer
+* Wait approximately 1 second and release BSL button
+
+### Beagle Connect: MSP430F5503 target using UART1
+
+The User button (under the battery JST connector) is the BSL button
 
 #### Building
 
@@ -19,7 +28,7 @@ Place board into BSL mode before programming.
 
 `MSP430_TOOLCHAIN_PATH=<msp430-gcc dir> PYTHON2=<python2 interpreter> make program`
 
-### MSP430F5529 target using UART0
+### Launchpad MSP-EXP430F5529LP: MSP430F5529 target using UART0
 
 #### Building
 
