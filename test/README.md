@@ -9,3 +9,7 @@
 - UART with USB/Serial converter for port2
 - Sends to port1, reads from port2, checks for complete message
 - Sends to port2, reads from port1, checks for complete message
+
+##GTest Suite
+
+RingTest - Test the RINGBUF struct and operations
